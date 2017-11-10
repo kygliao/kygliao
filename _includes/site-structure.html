@@ -1,0 +1,41 @@
+<link href="/wasabi_and_jekyll/css/wasabi.css" rel="stylesheet">
+
+<div class="wasabi-original" id="simple-project">
+wasabi_and_jekyll/
+wasabi_and_jekyll/index.md
+
+wasabi_and_jekyll/example-1.md
+  this is the file you're looking at right now!
+  (but a generated version of it)
+  <br> it uses the jekyll's <code>include</code>
+  tag to insert the wasabi project into the page
+
+wasabi_and_jekyll/example-2.md
+wasabi_and_jekyll/structure-for-async.wasabi.txt
+wasabi_and_jekyll/_config.yml
+
+wasabi_and_jekyll/css/
+wasabi_and_jekyll/css/wasabi.css
+  the wasabi stylesheet is included on this page
+
+wasabi_and_jekyll/_includes/
+wasabi_and_jekyll/_includes/site-structure.html
+  this file has the wasabi source and the code to generate
+  what you're looking at
+
+wasabi_and_jekyll/_layouts/
+wasabi_and_jekyll/_layouts/default.html
+
+wasabi_and_jekyll/js/
+wasabi_and_jekyll/js/wasabi.js
+  the wasabi js library is included on this page
+  </br> (and then some extra scripts are called)
+
+</div>
+
+<script src="/wasabi_and_jekyll/js/wasabi.js"></script>
+
+<script>
+  var myProject = new Wasabi.Project('#simple-project');
+  myProject.replace();
+</script>
