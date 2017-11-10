@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# [using {% raw %} `{% include %}` {% endraw %} tag](/example-1.html)
+# [example 1](/example-1.html)
 
-# [or async](/example-2.html)
+# [example 2 (async)](/example-2.html)
 
