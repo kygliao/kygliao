@@ -4,7 +4,7 @@ layout: default
 
 # async example 2
 
-this fetches the file [`/wasabi_and_jekyll/structure-for-async.wasabi.txt`](/structure-for-async.wasabi.txt)
+this fetches the file [`/structure-for-async.wasabi.txt`](/structure-for-async.wasabi.txt)
 to build the wasabi document
 
 <script id="wasabi-location">
