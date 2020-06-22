@@ -5,10 +5,8 @@ const Main = styled.main`
   align: center;
 `;
 
-
-const AppHeader = styled.div`
+const AppBody = styled.div`
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,22 +15,46 @@ const AppHeader = styled.div`
   color: white;
 `;
 
-const AppLink = styled.div`
-  color: #61dafb;
+const WelcomeSection = styled.section`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 60vh;
+`;
+
+const LinkSection = styled.section`
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 40vh;
 `;
 
 const WelcomeMessage = styled.span`
   line-height: 6vh;
 `;
 
+const Link = styled.a`
+  color: #61dafb;
+`;
+
 function App() {
   return (
     <Main>
-      <AppHeader>
-        <WelcomeMessage>Welcome!</WelcomeMessage>
-        <WelcomeMessage>欢迎光临!</WelcomeMessage>
-        <WelcomeMessage>ようこそ!</WelcomeMessage>
-      </AppHeader>
+      <AppBody>
+        <WelcomeSection>
+          <WelcomeMessage>Welcome!</WelcomeMessage>
+          <WelcomeMessage>欢迎光临!</WelcomeMessage>
+          <WelcomeMessage>ようこそ!</WelcomeMessage>
+        </WelcomeSection>
+        <LinkSection>
+          <Link href="https://www.linkedin.com/in/kaiying-liao-b6b05529">LinkedIn</Link>
+          <br />
+          Where I work:
+          <Link href="https://www.trialspark.com/">TrialSpark</Link>
+        </LinkSection>
+      </AppBody>
     </Main>
   );
 }
